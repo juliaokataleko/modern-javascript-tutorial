@@ -1,15 +1,7 @@
-// template literals
+import { data } from "./15-import-export.js";
 
-let word1 = "Julian";
-let word2 = "Kataleko";
+let updatedData = data;
 
-// const fullName = word1 + " " + word2
-const fullName = `${word1} ${word2}`;
+updatedData.push(10);
 
-console.log(fullName);
-
-let example = 'Hello \n' + 'world';
-let example2 = `${word1}
-${word2}`;
-
-document.getElementById("example").innerText = example2
+console.log(updatedData);
